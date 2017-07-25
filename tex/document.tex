@@ -1,10 +1,103 @@
-\documentclass[11pt,a4paper]{book}
+\documentclass{book}
+
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\author{Richard Kasperowski }
-\title{The Core Protocols}
+
+\usepackage{nameref}
+\newcommand*{\numref}[1]{{\hyperref[{#1}]{\autoref*{#1}}}}
+\newcommand*{\fullref}[1]{\textit{\hyperref[{#1}]{\autoref*{#1} : \nameref*{#1}}}}
+
+\usepackage[size=novel]{createspace}
+
+\author{Richard Kasperowski}
+\title{Les \textit{Core Protocols}}
+
+\pdftitle{Les Core Protocols}
+\pdfauthor{Richard Kasperowski}
+\pdfsubject{Les Core Protocols}
+
 \begin{document}
-Hello world!
+
+\tableofcontents
+
+\chapter{Comment utiliser ce livre ?} \label{utiliser-ce-livre}
+
+Ce livre a pour vocation de partager plus largement les \emph{Core Protocols}. Il consiste en un résumé succinct des 
+\emph{Core Protocols} dans un livre à prix raisonnable et un libre électronique. Vous pouvez lire ce guide en tant que 
+tel ou en conjonction avec l'excellent livre de Jim et Michele McCarthy, \emph{Software for your head}, paru en 2001
+chez Addison-Wesley et dont ce document est inspiré. Pour les \emph{Core Protocols}, lisez \fullref{engagements} et 
+\fullref{core-protocols}. 
+
+Ce livre est également un guide pour faciliter l'animation d'ateliers. Ces ateliers visent à vous aider, ainsi que 
+votre équipe, á atteindre l'excellence. Un atelier peut durer de quelques heures à quelques jours ; de longs ateliers
+peuvent permettre de meilleurs résultats. L'atelier est explicité dans le protocole additionnel, \nameref{atelier-express}
+dans le \numref{aller-plus-loin}. Ce chapitre inclut également des éléments issus du \emph{BootCamp Manual V2.3} édité en 
+2001 chez McCarthy Technologies, Inc. et de correspondances personnelles par courrier électronique avec Jim McCarthy. Pour 
+préparer un atelier, ou pour en apprendre plus à propos des \emph{Core Protocols}, lisez ce livre intégralement. 
+
+Pour profiter pleinement et intégrer les \emph{Core Protocols}, participez à un \emph{Core Procols BootCamp}
+\footnote{Formation aux \emph{Core Protocols} (ndt)}. Cette formation consiste en une session de quelques jours qui aidera
+votre équipe à concevoir, à mettre en place et à livrer d'excellents produits à temps. Pour organiser ou participer à cette
+formation, contactez un facilitateur de \emph{Core Protocols BootCamp}.
+
+\chapter{Les Engagements Fondamentaux} \label{engagements}
+
+Les Engagements Fondamentaux (\emph{Core Commitments}) ont été définis par Jim McCarthy 
+et Michele McCarty. 
+
+\begin{enumerate}
+	\item Je m'engage lorsque je suis présent
+	\begin{enumerate}
+		\item à avoir conscience de et à divulguer
+		\begin{enumerate}		
+			\item ce que je veux
+			\item ce que je pense
+			\item ce que je ressens
+		\end{enumerate}
+		\item à toujours chercher une aide efficace
+		\item à m'abstenir de donner et à refuser d'accepter toute transmission émotionnelle incohérente
+		\item à immédiatement, lorsque j'ai ou lorsque j'entends une idée plus pertinente que celle qui domine 
+		      à ce moment, 
+		\begin{enumerate}		
+			\item la soumettre pour qu'elle soit acceptée ou refusée
+			\item explicitement chercher à l'améliorer
+		\end{enumerate}
+		\item à personnellement soutenir la meilleure idée
+		\begin{enumerate}		
+			\item d'où qu'elle vienne
+			\item quelle que soit mon espérance de voir une meilleure idée émerger
+			\item quand je n'ai pas de meilleure idée à proposer
+		\end{enumerate}
+	\end{enumerate}
+	\item Je m'engage à chercher à percevoir plus que je ne cherche à être perçu
+	\item Je m'engage à tirer parti des équipes, tout particulièrement pour venir à bout de tâches difficiles
+	\item Je m'engage à parler quand et seulement quand je pense pouvoir améliorer le rapport résultat / efforts courant
+	\item Je m'engage à ne proposer et à n'accepter que des comportements et des échanges raisonnables et axés vers le résultat
+	\item Je m'engage à quitter les situations moins constructives
+	\begin{enumerate}
+		\item quand je ne peux pas tenir les engagements demandés
+		\item quand je peux prendre part à quelque chose de plus important
+	\end{enumerate}
+	\item Je m'engage à faire maintenant ce qui doit être fait et qui peut effectivement être fait maintenant
+	\item Je m'engage à avancer vers un but donné et à adapter mon comportement pour l'atteindre
+	\item Je m'engage à utiliser les \emph{Core Protocols} (ou mieux) si possible
+	\begin{enumerate}
+		\item j'utiliserai correctement le \emph{Protocol Check} en temps voulu sans porter préjudice
+	\end{enumerate}
+	\item Je m'engage à ne jamais blesser -- ni à tolérer que quelqu'un blesse -- qui que ce soit pour sa fidélité à ces engagements
+	\item Je m'engage à ne jamais rien faire d'idiot à dessein
+\end{enumerate}
+
+\chapter{Les \emph{Core Protocols}} \label{core-protocols}
+
+\chapter{Aller plus loin, protocoles} \label{aller-plus-loin}
+
+\section{Atelier express} \label{atelier-express}
+\section{Engagements personnels} \label{engagements-personnels}
+\section{Alignement personnel express} \label{alignement-personnel-express}
+\section{Toile d'alignement express} \label{toile-alignement-express}
+\section{Vision partagée} \label{vision-partagee}
+
 \end{document}

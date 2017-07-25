@@ -3,3 +3,4 @@ _build
 *.log
 *.synctex.gz
 *.pdf
+*.toc
