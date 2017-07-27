@@ -9,6 +9,10 @@
 \newcommand*{\numref}[1]{{\hyperref[{#1}]{\autoref*{#1}}}}
 \newcommand*{\fullref}[1]{\textit{\hyperref[{#1}]{\autoref*{#1} : \nameref*{#1}}}}
 
+% Page break after section
+\let\oldsection\section
+\renewcommand\section{\clearpage\oldsection}
+
 \usepackage[size=novel]{createspace}
 
 \author{Richard Kasperowski \thanks{Traduction française : Alban Dericbourg}}
