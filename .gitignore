@@ -4,3 +4,5 @@ _build
 *.synctex.gz
 *.pdf
 *.toc
+*.out
+
