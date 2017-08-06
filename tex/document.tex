@@ -5,6 +5,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage{array}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
 \usepackage{graphicx}
 \usepackage{wrapfig}
 
@@ -846,7 +850,20 @@ l'implémentation du produit.
 	      transmettre tout ce qui est nécessaire de façon concise dans une phrase facile à comprendre et à mémoriser.
 \end{itemize}
 
+\subsection{Exemples de déclarations de vision à long terme et de version}
 
+\noindent
+\begin{tabularx}{\linewidth}{
+ |>{\hsize=\hsize}Y|% 50% of 2\hsize 
+  >{\hsize=\hsize}Y|% 50% of 2\hsize
+}
+	\hline
+	\textsc{Déclaration de vision à long terme} & \textsc{Déclaration de première version} \\ \hline \hline
+	Envoyer un homme sur la Lune & Mettre un homme en orbite \\ \hline
+	Un ordinateur sur chaque bureau & Un ordinateur sur chaque bureau de notre entreprise \\ \hline
+	La paix dans le monde & La paix dans notre famille \\ \hline 
+	Un monde sans fils & Des téléphones sans fil pour toute notre équipe \\ \hline
+\end{tabularx}
 
 \chapter*{À propos de l'auteur}
 
