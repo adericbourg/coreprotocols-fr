@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends make texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-french lmodern
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends make texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-french lmodern pandoc
 script:
 - make
 tags: true
