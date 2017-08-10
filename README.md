@@ -16,4 +16,4 @@ Un script automatisé vous permet de construire tous les formats de livre. Lance
 * d'une [distribution LaTeX](https://www.latex-project.org/get/) ;
 * de [pandoc](https://pandoc.org/).
 
-Les fichers produits se trouvent le le répertoire `_build`.
+Les fichers produits se trouvent dans le répertoire `_build`.
