@@ -1,4 +1,4 @@
-# Les Protocoles Fondamentaux [![Build Status](https://travis-ci.org/adericbourg/coreprotocols-fr.svg?branch=master)](https://travis-ci.org/adericbourg/coreprotocols-fr)
+# Les Protocoles Fondamentaux (The Core Protocols) [![Build Status](https://travis-ci.org/adericbourg/coreprotocols-fr.svg?branch=master)](https://travis-ci.org/adericbourg/coreprotocols-fr)
 
 Les Protocoles Fondamentaux (orig. _The Core Protocols: A Guide to Greatness_) est un livre de Richard Kasperowski basé sur les travaux de Jim McCarthy et Michele McCarthy.
 
