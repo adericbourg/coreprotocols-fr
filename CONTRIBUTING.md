@@ -24,7 +24,7 @@ git clone git@github.com:adericbourg/coreprotocols-fr.git
 
 Les sources de ce livre sont alors disponibles sur votre machine dans le répertoire `coreprotocols-fr` situé dans le répertoire depuis lequel vous avez executé la commande `git clone`.
 
-### Mettre à jour les sources
+### Mise à jour les sources
 
 Cette traduction évolue indépendamment de votre propre copie. Il est donc nécessaire de vous synchroniser avant de proposer une nouvelle modification. 
 
@@ -51,7 +51,7 @@ git rebase upstream/master
 git push origin master:master
 ```
 
-### Proposer une modification
+### Proposition d'une modification
 
 Éditez les fichiers en local comme vous l'auriez fait avec n'importe quel fichier. 
 
