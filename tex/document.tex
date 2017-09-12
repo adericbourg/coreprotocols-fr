@@ -39,9 +39,9 @@
 
 \usepackage{enumitem}
 
-% Page break after section
-\let\oldsection\section
-\renewcommand\section{\clearpage\oldsection}
+% Page break before section
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
 
 \author{Richard Kasperowski \thanks{Traduction française : Alban Dericbourg}}
 \title{Les Protocoles Fondamentaux :\\un guide vers l'excellence}
