@@ -74,6 +74,22 @@ Publiez ensuite cette modification sur votre copie publique du dépôt :
 git push origin master:master
 ```
 
+Depuis votre _fork_ sur Github, créez une _pull-request_. Pour cela, remarquez le bandeau qui est apparu au-dessus de la liste des fichiers :
+
+> This branch is 1 commit ahead of adericbourg:master.
+
+Sur ce bandeau, cliquez sur *Pull request* et vérifiez vos changements.
+
+Utilisez les paramètres suivants :
+* *Base fork* : _adericbourg/coreprotocols-fr_
+* *Base* : _master_
+* *Head fork* : le nom de _votre_ dépôt
+* *Compare* : la branche sur laquelle vous avez travaillé (si vous suivez cette documentation à la lettre : _master_)
+
+Cliquez alors sur le bouton *Create pull request*. Ajoutez des commentaires si vous le jugez nécessaire et cliquez à nouveau sur *Create pull request*.
+
+Attendez maintenant que quelqu'un la relise et la valide.
+
 ## Construction du livre
 
 Le livre est édité avec LaTeX. Vous pouvez en gérer une version lisible sous plusieurs formats :
