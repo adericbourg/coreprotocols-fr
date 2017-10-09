@@ -1,4 +1,4 @@
-all: pdf epub mobi
+all: pdf epub
 
 _build:
 	mkdir -p _build
@@ -9,6 +9,3 @@ pdf: _build
 
 epub: _build
 	cd tex && pandoc document.tex -o ../_build/document.epub -M date="`date "+%e %B %Y"`"
-
-mobi: _build
-		cd tex && pandoc document.tex -o ../_build/document.mobi -M date="`date "+%e %B %Y"`"
