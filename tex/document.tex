@@ -50,6 +50,11 @@
 \pdfauthor{Richard Kasperowski}
 \pdfsubject{Les Protocoles Fondamentaux}
 
+\makeatletter
+% Prevent par break
+\newcommand\mynobreakpar{\par\nobreak\@afterheading}
+\makeatother
+
 \begin{document}
 
 \frontmatter
@@ -967,7 +972,7 @@ si vous avez compris et suivi leurs conseils. Si ce n'est pas le cas, vous aurez
 perdu votre temps car vos managers insisteront sur le fait qu'il faut que vous profitiez pleinement de
 toutes les ressources disponibles pour ce projet.
 
-Souvenez-vous :
+Souvenez-vous :\mynobreakpar
 \begin{itemize}
 	\item Vos managers remarqueront rapidement que vous ne dites pas la vérité.
 	\item Vos managers seront capables d'identifier que vous n'avez pas de \emph{Vision Partagée}.
@@ -989,7 +994,7 @@ habitudes prises dans un monde où il n'y a que très peu de visions partagées,
 \end{itemize}
 
 Avec une \emph{Vision Partagée}, vous pouvez abandonner la plupart des habitudes que vous avez prises pour
-contrôler les choses au travail. Une fois que cette vision est définie, nous vous recommandons :
+contrôler les choses au travail. Une fois que cette vision est définie, nous vous recommandons :\mynobreakpar
 \begin{itemize}
 	\item De consituer des sous-équipes. Votre travail restera en phase car vous restez connectés et que
 	      vous partagez la même vision.
