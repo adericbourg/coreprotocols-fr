@@ -6,7 +6,7 @@ Ce dépôt contient la traduction française de ce livre. La version originale e
 
 ## Téléchargement de la dernière révision
 
-La dernière révision relue et corrigée se trouve dans l'[onglet _Releases_](https://github.com/adericbourg/coreprotocols-fr/releases). Vous y trouverez le livre aux formats PDF et liseuse (ePub, Mobi et AZW3). 
+La dernière révision relue et corrigée se trouve dans l'[onglet _Releases_](https://github.com/adericbourg/coreprotocols-fr/releases). Vous y trouverez le livre aux formats PDF et liseuse (ePub, Mobi et AZW3).
 
 Leur contenu est strictement identique à celui des [versions papier que vous pouvez acheter en ligne](https://www.amazon.fr/Protocoles-Fondamentaux-Core-Protocols-lexcellence/dp/1973931443/).
 

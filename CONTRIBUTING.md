@@ -18,7 +18,7 @@ Depuis une console, dans le répertoire de votre choix, utilisez cette URL préc
 
 Exemple :
 
-```
+```shell
 git clone git@github.com:adericbourg/coreprotocols-fr.git
 ```
 
@@ -32,7 +32,7 @@ Cette traduction évolue indépendamment de votre propre copie. Il est donc néc
 
 Renseignez le dépôt de référence :
 
-```
+```shell
 git remote add upstream https://github.com/adericbourg/coreprotocols-fr.git
 ```
 
@@ -40,13 +40,13 @@ git remote add upstream https://github.com/adericbourg/coreprotocols-fr.git
 
 Récupérez la dernière version du dépôt de référence :
 
-```
+```shell
 git fetch upstream
 ```
 
 Fusionnez son contenu dans votre dépôt et mettez à jour également votre dépôt publique :
 
-```
+```shell
 git rebase upstream/master
 git push origin master:master
 ```
@@ -61,7 +61,7 @@ Vous êtes libres d'utiliser des _feature branches_. Cet aspect n'est pas trait�
 
 Depuis le répertoire `coreprotocols-fr`, _commitez_ les fichiers que vous avez modifié :
 
-```
+```shell
 git add .
 git commit
 ```
@@ -70,7 +70,7 @@ Cela ouvre un éditeur de texte qui vous propose de décrire la modification que
 
 Publiez ensuite cette modification sur votre copie publique du dépôt :
 
-```
+```shell
 git push origin master:master
 ```
 
@@ -81,6 +81,7 @@ Depuis votre _fork_ sur Github, créez une _pull-request_. Pour cela, remarquez 
 Sur ce bandeau, cliquez sur *Pull request* et vérifiez vos changements.
 
 Utilisez les paramètres suivants :
+
 * *Base fork* : _adericbourg/coreprotocols-fr_
 * *Base* : _master_
 * *Head fork* : le nom de _votre_ dépôt
