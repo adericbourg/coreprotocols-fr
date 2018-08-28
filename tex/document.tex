@@ -25,6 +25,7 @@
 \areaset[0.75in]{4.25in}{8in}
 
 \usepackage{array}
+\usepackage{booktabs}
 \usepackage{tabularx}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \renewcommand\tabularxcolumn[1]{m{#1}} % Vertical centering
@@ -34,7 +35,7 @@
 
 \usepackage{nameref}
 \newcommand*{\numref}[1]{{\hyperref[{#1}]{\autoref*{#1}}}}
-\newcommand*{\fullref}[1]{\textit{\hyperref[{#1}]{\autoref*{#1} : \nameref*{#1}}}}
+\newcommand*{\fullref}[1]{\textit{\hyperref[{#1}]{\autoref*{#1}~: \nameref*{#1}}}}
 
 \usepackage{enumitem}
 
@@ -42,7 +43,7 @@
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
 
-\author{Richard Kasperowski \thanks{Traduction française : Alban Dericbourg}}
+\author{Richard Kasperowski \thanks{Traduction française: Alban Dericbourg}}
 \title{Les Protocoles Fondamentaux :\\un guide vers l'excellence}
 \date{}
 
@@ -88,19 +89,19 @@
 	The Core Protocols © Jim McCarthy et Michele McCarthy\\
 	Version 3.03\\[1em]
 
-	\copyright{} 2014-15 Richard Kasperowski tous droits réservés\\
+	\copyright{} 2014--15 Richard Kasperowski tous droits réservés\\
 	Version 1.3\\
 	\begin{tabular}{rl}
 		ISBN & 0692381082 \\
-		ISBN-13 & 978-0692381083\\
+		ISBN-13 & 978--0692381083\\
 	\end{tabular}\\[1em]
 
-	Traduction française : \copyright{} 2017 Alban Dericbourg\\
+	Traduction française: \copyright{} 2017 Alban Dericbourg\\
 	\begin{tabular}{rl}
 		ISBN & 1973931443 \\
-		ISBN-13 & 978-1973931447\\
+		ISBN-13 & 978--1973931447\\
 	\end{tabular}\\[1em]
-	Dernière révision : \today
+	Dernière révision: \today
 \end{center}
 \pagebreak
 
@@ -113,7 +114,7 @@
 \chapter{Avant-propos}
 
 Plus j'étudie, pratique et partage les Protocoles Fondamentaux, plus je considère qu'ils constituent la meilleure approche pour
-atteindre d'excellents résultats dans toutes les facettes de ma vie et plus je me sens aligné avec la vision de Jim et Michele McCarthy :
+atteindre d'excellents résultats dans toutes les facettes de ma vie et plus je me sens aligné avec la vision de Jim et Michele McCarthy:
 que tous vivent dans l'excellence.
 
 J'ai rassemblé les Protocoles Fondamentaux dans un livre autonome pour les rendre plus accessibles à ceux que j'aime, pour
@@ -164,9 +165,9 @@ l'excellence.
 	dans son intégralité en incluant ce paragraphe.
 \end{samepage}
 
-\mainmatter
+\mainmatter{}
 
-\chapter{Comment utiliser ce livre ?} \label{utiliser-ce-livre}
+\chapter{Comment utiliser ce livre?}\label{utiliser-ce-livre}
 
 Ce livre a pour vocation de partager plus largement les Protocoles Fondamentaux. Il consiste en un résumé succinct des
 Protocoles Fondamentaux dans un livre à prix raisonnable, ainsi qu'un livre électronique. Vous pouvez lire ce guide en tant que
@@ -175,10 +176,10 @@ chez Addison-Wesley et dont ce document est inspiré. Pour les Protocoles Fondam
 et le \fullref{core-protocols}.
 
 Ce livre est également un guide pour faciliter l'animation d'ateliers. Ces ateliers visent à vous aider, avec
-votre équipe, à atteindre l'excellence. Un atelier peut durer de quelques heures à quelques jours ; de longs ateliers
+votre équipe, à atteindre l'excellence. Un atelier peut durer de quelques heures à quelques jours; de longs ateliers
 peuvent permettre de meilleurs résultats. L'atelier est explicité dans le protocole additionnel, \nameref{atelier-express}
 dans le \numref{aller-plus-loin}. Ce chapitre inclut également des éléments issus du \emph{BootCamp Manual V2.3} édité en
-2001 chez McCarthy Technologies, Inc. et de correspondances personnelles par courrier électronique avec Jim McCarthy. Pour
+2001 chez McCarthy Technologies, Inc.\ et de correspondances personnelles par courrier électronique avec Jim McCarthy. Pour
 préparer un atelier, ou pour en apprendre plus à propos des Protocoles Fondamentaux, lisez ce livre intégralement.
 
 Pour profiter pleinement et intégrer les Protocoles Fondamentaux, participez à un \emph{Core Protocols BootCamp}
@@ -186,7 +187,7 @@ Pour profiter pleinement et intégrer les Protocoles Fondamentaux, participez à
 votre équipe à concevoir, à mettre en place et à livrer d'excellents produits à temps. Pour organiser ou participer à cette
 formation, contactez un facilitateur de \emph{Core Protocols BootCamp}.
 
-\chapter{Engagements Fondamentaux} \label{engagements}
+\chapter{Engagements Fondamentaux}\label{engagements}
 
 Les Engagements Fondamentaux (\emph{Core Commitments}) ont été définis par Jim McCarthy et Michele McCarthy.
 
@@ -233,17 +234,17 @@ Les Engagements Fondamentaux (\emph{Core Commitments}) ont été définis par Ji
 	\item Je m'engage à ne jamais rien faire d'idiot à dessein
 \end{enumerate}
 
-\chapter{Protocoles Fondamentaux} \label{core-protocols}
+\chapter{Protocoles Fondamentaux}\label{core-protocols}
 
-\section{Passer} \label{protocole-passer}
+\section{Passer}\label{protocole-passer}
 
-\emph{Passer}\footnote{En anglais : \emph{Pass}} est un moyen de décliner sa participation à une activité. Utilisez-le chaque fois que vous ne souhaitez pas
+\emph{Passer}\footnote{En anglais: \emph{Pass}} est un moyen de décliner sa participation à une activité. Utilisez-le chaque fois que vous ne souhaitez pas
 participer à une activité.
 
 \subsection{Étapes}
 \begin{enumerate}
 	\item Quand vous avez décidé de ne pas participer à une activité, dites \og{}je passe\fg{}.
-	\item \og{}Dé-passez\fg{} dès que vous le souhaitez. Reprenez l'activité dès que vous savez que vous voulez participer ;
+	\item \og{}Dé-passez\fg{} dès que vous le souhaitez. Reprenez l'activité dès que vous savez que vous voulez participer;
 	      dites alors \og{}je participe\fg{}.
 \end{enumerate}
 
@@ -265,15 +266,15 @@ participer à une activité.
 	\item Vous pouvez décider de passer même si vous avez commencé l'activité.
 \end{itemize}
 
-\section{Entrée} \label{protocole-entree}
+\section{Entrée}\label{protocole-entree}
 
-Commencez une réunion par une \emph{Entrée\footnote{En anglais : \emph{Check In}}}.
+Commencez une réunion par une \emph{Entrée\footnote{En anglais: \emph{Check In}}}.
 Vous pouvez également en faire une en tête à tête ou en groupe chaque fois que
 cela améliorerait les interactions d'une équipe.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item Celui qui a la parole annonce son état émotionnel. Cela peut être :
+	\item Celui qui a la parole annonce son état émotionnel. Cela peut être:
 	      \begin{itemize}
 		    \item \og{}je suis triste\fg{},
 		    \item \og{}je suis en colère\fg{},
@@ -293,7 +294,7 @@ cela améliorerait les interactions d'une équipe.
 \begin{itemize}
 	\item Exprimez vos émotions sans les qualifier.
 	\item N'exprimez que vos émotions (ne parlez pas pour les autres).
-	\item N'interrompez pas l'entrée de quelqu'un d'autre : gardez le silence.
+	\item N'interrompez pas l'entrée de quelqu'un d'autre: gardez le silence.
 	\item Ne faites pas référence à l'entrée de quelqu'un d'autre sans avoir eu son accord explicite.
 \end{itemize}
 
@@ -309,17 +310,17 @@ cela améliorerait les interactions d'une équipe.
 	      \end{itemize}
 	      Par exemple, l'excitation peut être exprimée comme une combinaison de joie et de peur.
 	\item Soyez aussi profond que possible dans l'entrée. La plupart du temps, vous citerez une ou deux émotions.
-	\item N'essayez pas de minimiser vos émotions. Ne dites pas que vous être \og{}un peu\fg{} en colère ; en revanche, vous pouvez nuancer :
+	\item N'essayez pas de minimiser vos émotions. Ne dites pas que vous être \og{}un peu\fg{} en colère; en revanche, vous pouvez nuancer:
 	      \og{}je suis en colère mais je ressens aussi de la joie\fg{}.
 	\item À moins que le groupe ne soit très grand, si plus d'une personne participe à l'entrée, il est préférable que tout le groupe
 	      participe également.
 	\item \emph{Inquiet} peut se traduire par de la peur.
 \end{itemize}
 
-\section{Sortie} \label{protocole-sortie}
+\section{Sortie}\label{protocole-sortie}
 
 Votre présence physique indique que vous respectez les Engagements Fondamentaux. Lorsque vous prenez conscience que vous ne pouvez plus
-respecter ces engagements ou que vous pensez être plus utile ailleurs, vous devez annoncer la \emph{Sortie}\footnote{En anglais : \emph{Check Out}}.
+respecter ces engagements ou que vous pensez être plus utile ailleurs, vous devez annoncer la \emph{Sortie}\footnote{En anglais: \emph{Check Out}}.
 
 \subsection{Étapes}
 \begin{enumerate}
@@ -345,14 +346,14 @@ respecter ces engagements ou que vous pensez être plus utile ailleurs, vous dev
 	\item La sortie acte votre incapacité à contribuer à cet instant.
 \end{itemize}
 
-\section{Demande d'aide} \label{demande-aide}
+\section{Demande d'aide}\label{demande-aide}
 
-La \emph{Demande d'aide}\footnote{En anglais : \emph{Ask for help}} vous permet de bénéficier efficacement des connaissances et des compétences des autres. Demander de l'aide
+La \emph{Demande d'aide}\footnote{En anglais: \emph{Ask for help}} vous permet de bénéficier efficacement des connaissances et des compétences des autres. Demander de l'aide
 catalyse le lien et la vision partagée. Utilisez-la toujours, que ce soit avant ou pendant la poursuite d'un objectif.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item Le demandeur demande à un autre : \og{}[\textsc{destinataire}], veux-tu [\textsc{demande}] ?\fg{}.
+	\item Le demandeur demande à un autre: \og{}[\textsc{destinataire}], veux-tu [\textsc{demande}]?\fg{}.
 	\item Le demandeur précise les détails ou les contraintes associées à sa demande.
 	\item Le destinataire de la demande répond avec \textsc{oui}, \textsc{non} ou en proposant une aide alternative.
 \end{enumerate}
@@ -360,8 +361,8 @@ catalyse le lien et la vision partagée. Utilisez-la toujours, que ce soit avant
 \subsection{Engagements}
 \begin{itemize}
 	\item Commencez toujours votre demande par \og{}veux-tu\fg{}.
-	\item Ayez une vision claire de ce dont vous avez besoin ou, si ce n'est pas le cas, indiquez-le en disant : \og{}Je ne suis pas sûr
-	      de ce dont j'ai besoin, mais veux-tu m'aider ?\fg{}.
+	\item Ayez une vision claire de ce dont vous avez besoin ou, si ce n'est pas le cas, indiquez-le en disant: \og{}Je ne suis pas sûr
+	      de ce dont j'ai besoin, mais veux-tu m'aider?\fg{}.
     \item Partez du principe que les porteurs d'aide sont toujours disponibles et qu'il est de leur seule responsabilité de dire \textsc{non}.
     \item Dites \textsc{non} si vous ne voulez pas apporter votre aide.
     \item Acceptez le \textsc{non} sans poser de question et sans le prendre personnellement.
@@ -374,14 +375,14 @@ catalyse le lien et la vision partagée. Utilisez-la toujours, que ce soit avant
 
 \subsection{Remarques}
 \begin{itemize}
-	\item Demander de l'aide ne coûte rien. Au pire, un \textsc{non} ne vous avancera pas ; au mieux, vous avez gagné du temps pour
+	\item Demander de l'aide ne coûte rien. Au pire, un \textsc{non} ne vous avancera pas; au mieux, vous avez gagné du temps pour
 	      accomplir ou apprendre quelque chose.
-	\item Les donneurs d'aide doivent répondre \textsc{non} s'ils ne sont pas certains de vouloir aider ; une fois la demande déclinée,
+	\item Les donneurs d'aide doivent répondre \textsc{non} s'ils ne sont pas certains de vouloir aider; une fois la demande déclinée,
 	      ils n'ont rien à ajouter.
 	\item Vous ne demandez jamais \og{}trop\fg{} d'aide tant que l'on ne vous l'a pas signifié.
 	\item Si vous doutez de la pertinence de l'aide qui vous est offerte ou si vous ne l'estimez pas utile, ou encore si vous considérez
 	      que vous avez évalué l'idée qui vous est proposée et que vous la rejetez, adoptez une attitude de curiosité au lieu d'une opposition
-				automatique \og{}mais...\fg{}.
+				automatique \og{}mais\ldots\fg{}.
 	\item Demander de l'aide lorsque vous êtes en difficulté mon\-tre que vous avez attendu trop longtemps. Demandez de l'aide quand tout va bien.
 	\item Échangez simplement avec quelqu'un, même s'il ne sait rien de votre problème. Il peut vous aider à faire émerger des idées,
 	      particulièrement si la demande est de vous faire faire une \emph{Enquête}.
@@ -389,7 +390,7 @@ catalyse le lien et la vision partagée. Utilisez-la toujours, que ce soit avant
 
 \section{Contrôle de protocole}
 
-Utilisez le \emph{Contrôle de protocole}\footnote{En anglais : \emph{Protocol check}} si vous pensez qu'un protocole est mal utilisé
+Utilisez le \emph{Contrôle de protocole}\footnote{En anglais: \emph{Protocol check}} si vous pensez qu'un protocole est mal utilisé
 ou lorsqu'un Engagement Fondamental n'est pas respecté.
 
 \subsection{Étapes}
@@ -409,15 +410,15 @@ ou lorsqu'un Engagement Fondamental n'est pas respecté.
 
 \section{Contrôle d'intention}
 
-Utilisez le \emph{Contrôle d'intention}\footnote{En anglais : \emph{Intention check}} pour clarifier vos motivations ou celles de quelqu'un
-d'autre ; utilisez-le lorsque vous craignez qu'aucun résultat positif n'émerge de votre comportement actuel ou du comportement actuel de
+Utilisez le \emph{Contrôle d'intention}\footnote{En anglais: \emph{Intention check}} pour clarifier vos motivations ou celles de quelqu'un
+d'autre; utilisez-le lorsque vous craignez qu'aucun résultat positif n'émerge de votre comportement actuel ou du comportement actuel de
 cette personne. Le \emph{Contrôle d'intention} évalue l'intégrité de votre propre intention ou d'une autre personne dans une situation donnée.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item Demandez : \og{}quelle est ton/mon intention avec \emph{X} ?\fg{}, \emph{X} étant l'attitude de la personne à laquelle vous
+	\item Demandez: \og{}quelle est ton/mon intention avec \emph{X}?\fg{}, \emph{X} étant l'attitude de la personne à laquelle vous
 	      posez la question.
-	\item Si cela est pertinent, demandez également : \og{}Quelle réponse ou attitude attendais-tu, et de qui, en réponse à \emph{X} ?\fg{}
+	\item Si cela est pertinent, demandez également: \og{}Quelle réponse ou attitude attendais-tu, et de qui, en réponse à \emph{X}?\fg{}
 \end{enumerate}
 
 \subsection{Engagements}
@@ -434,15 +435,15 @@ cette personne. Le \emph{Contrôle d'intention} évalue l'intégrité de votre p
 	\item Si le conflit qui émerge semble impossible à résoudre, sortez (\fullref{protocole-sortie}) et demandez de l'aide (\fullref{demande-aide}).
 \end{itemize}
 
-\section{Décision} \label{protocole-decision}
+\section{Décision}\label{protocole-decision}
 
-Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} pour amener un groupe immédiatement et unanimement vers un résultat.
+Utiliser le protocole de \emph{Décision}\footnote{En anglais: \emph{Decider}} pour amener un groupe immédiatement et unanimement vers un résultat.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item Le proposant dit : \og{}Je propose [\textsc{proposition concise, con\-crète et réalisable}]\fg{}.
-	\item Le proposant dit : \og{}Un, deux, trois\fg{}.
-	\item Les votants votent simultanément parmi les choix :
+	\item Le proposant dit: \og{}Je propose [\textsc{proposition concise, con\-crète et réalisable}]\fg{}.
+	\item Le proposant dit: \og{}Un, deux, trois\fg{}.
+	\item Les votants votent simultanément parmi les choix:
 	      \begin{itemize}
 	      	\item Oui (pouce vers le haut)
 	      	\item Non (pouce vers le bas)
@@ -451,13 +452,13 @@ Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} 
 	\item Les votants qui refusent catégoriquement la proposition disent \og{}je suis absolument contre\fg{}. Si cela arrive, la proposition est abandonnée.
 	\item Le proposant compte les votes.
 	\item Le proposant abandonne sa proposition si le total de \textsc{non} et de \textsc{je soutiens} est \og{}trop grand\fg{} ou s'il estime qu'il ne parviendra
-	      pas à mener un protocole de \emph{Résolution} à son terme (\numref{protocole-resolution}). \og{}Trop grand\fg{} suit l'heuristique suivante :
+	      pas à mener un protocole de \emph{Résolution} à son terme (\numref{protocole-resolution}). \og{}Trop grand\fg{} suit l'heuristique suivante:
 	      \begin{itemize}
-	      	\item environ 50\% (ou plus) des votes sont des soutiens ;
+	      	\item environ 50\% (ou plus) des votes sont des soutiens;
 	      	\item l'espérance de gain si la proposition est mise en œuvre est inférieure à l'effort nécessaire pour mener un protocole de \emph{Résolution}.
 	      \end{itemize}
-	\item Le proposant utilise le protocole de \emph{Résolution} avec chaque personne ayant voté \textsc{non} en lui demandant : \og{}De quoi as-tu besoin pour
-	      accepter cette proposition ?\fg{}.
+	\item Le proposant utilise le protocole de \emph{Résolution} avec chaque personne ayant voté \textsc{non} en lui demandant: \og{}De quoi as-tu besoin pour
+	      accepter cette proposition?\fg{}.
 	\item Le proposant déclare la proposition adoptée si tous les votants \textsc{non} changent leur vote en \textsc{oui} ou \textsc{je soutiens}.
 	\item L'équipe est alors engagée dans la mise en œuvre de la proposition et l'obtention du résultat.
 \end{enumerate}
@@ -465,7 +466,7 @@ Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} 
 \subsection{Engagements}
 \begin{itemize}
 	\item Ne proposez qu'un seul point à la fois.
-	\item Restez présent jusqu'à la fin du protocole \emph{Décision} ; gardez en tête que votre attitude joue sur l'avancement du groupe.
+	\item Restez présent jusqu'à la fin du protocole \emph{Décision}; gardez en tête que votre attitude joue sur l'avancement du groupe.
 	\item Donnez votre attention pleine et entière à une proposition.
 	\item Ne parlez que si vous êtes le proposant ou que le proposant vous a donné la parole.
 	\item Gardez les raisons de votre vote pour vous durant le protocole.
@@ -477,7 +478,7 @@ Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} 
 	\item Utilisez votre droit de veto à bon escient et avec parcimonie.
 	\item Insistez autant que nécessaire pour que les protocoles de \emph{Décision} et de \emph{Résolution} soient suivis à la lettre.
 	\item Ne passez pas (\fullref{protocole-passer}) durant un protocole de \emph{Décision}.
-	\item Faites toujours en sorte que les choses aillent de l'avant ; gardez en tête qu'elles doivent rester réalisables.
+	\item Faites toujours en sorte que les choses aillent de l'avant; gardez en tête qu'elles doivent rester réalisables.
 	\item Ne prenez pas en compte le vote des autres pour choisir votre propre vote.
 	\item Évitez l'utilisation du protocole \emph{Décision} au sein d'un groupe de taille importante. Séparez plutôt le groupe en petits groupes pour prendre les
 	      décisions et faites une synthèse avec le groupe dans son intégralité.
@@ -488,7 +489,7 @@ Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} 
 	\item Ne votez \textsc{non} que lorsque vous êtes persuadé que l'apport positif de ce vote compensera le coût (généralement considérable) induit par celui-ci.
 	\item Si vous avez un doute vis-à-vis d'une proposition, ap\-portez-lui un soutien neutre (\textsc{je soutiens}) et demandez des explications une fois que le
 	      protocole est terminé. Si vous avez une proposition plus pertinente à soumettre, ayez confiance en l'équipe pour la soutenir (\fullref{engagements}).
-	\item Évitez de voter \textsc{non} pour suggérer des améliorations mineures à une proposition globalement acceptable : cela ralentit l'avancement. Apportez
+	\item Évitez de voter \textsc{non} pour suggérer des améliorations mineures à une proposition globalement acceptable: cela ralentit l'avancement. Apportez
 	      plutôt une nouvelle proposition une fois que celle-ci est adoptée ou, mieux, impliquez-vous dans la réalisation de celle-ci pour l'enrichir de vos idées.
 	\item Abandonnez les propositions ne faisant pas l'unanimité. Si une proposition reçoit moins de 70\% de votes \textsc{oui} (approximativement), cette proposition
 	      est faible et devrait être abandonnée par le proposant. Il est, cependant, le seul à même de prendre cette décision.
@@ -497,15 +498,15 @@ Utiliser le protocole de \emph{Décision}\footnote{En anglais : \emph{Decider}} 
 	      votre intégrité.
 \end{itemize}
 
-\section{Résolution} \label{protocole-resolution}
+\section{Résolution}\label{protocole-resolution}
 
 Lorsqu'un protocole de \emph{Décision} aboutit avec un petit nombre d'opposants, le proposant mène l'équipe à un protocole de
-\emph{Résolution}\footnote{En anglais : \emph{Resolution}} qui vise à faire adhérer,
+\emph{Résolution}\footnote{En anglais: \emph{Resolution}} qui vise à faire adhérer,
 à coût minimal, les opposants à la proposition.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item Le proposant demande à chaque opposant, tour à tour : \og{}de quoi as-tu besoin pour accepter cette proposition ?\fg{}
+	\item Le proposant demande à chaque opposant, tour à tour: \og{}de quoi as-tu besoin pour accepter cette proposition?\fg{}
 	\item L'opposant énonce de façon concise et précise les aménagements qu'il souhaite.
 	\item Le proposant suggère d'adopter cet amendement ou abandonne sa proposition.
 \end{enumerate}
@@ -516,12 +517,12 @@ Lorsqu'un protocole de \emph{Décision} aboutit avec un petit nombre d'opposants
 	\item Si les adaptations demandées par l'opposant sont complexes, le proposant retire sa proposition et soumet au groupe une nouvelle proposition intégrant
 	      ces modifications.
 	\item Si l'opposant commence par expliquer les raisons de son vote ou toute autre chose que ce qui lui permettrait d'adopter cette proposition, le proposant
-	      doit l'interrompre et répéter : \og{}de quoi as-tu besoin pour accepter cette proposition ?\fg{}
+	      doit l'interrompre et répéter: \og{}de quoi as-tu besoin pour accepter cette proposition?\fg{}
 \end{itemize}
 
-\section{Jeu de la perfection} \label{protocole-jeu-perfection}
+\section{Jeu de la perfection}\label{protocole-jeu-perfection}
 
-Le protocole du \emph{Jeu de la perfection}\footnote{En anglais : \emph{Perfection game}} vous aide à mettre en commun les meilleures idées.
+Le protocole du \emph{Jeu de la perfection}\footnote{En anglais: \emph{Perfection game}} vous aide à mettre en commun les meilleures idées.
 Utilisez-le lorsque vous souhaitez améliorer quelque chose que vous avez créé.
 
 \subsection{Étapes}
@@ -529,15 +530,15 @@ Utilisez-le lorsque vous souhaitez améliorer quelque chose que vous avez créé
 	\item La personne à l'origine de la demande de perfectionnement réalise le geste ou présente l'objet soumis à amélioration, éventuellement en
 	      précisant \og{}c'est le début\fg{} et \og{}c'est la fin\fg{} pour indiquer au groupe le début et la fin de la démonstration.
 	\item Chaque membre du groupe note de 1 à 10 le geste ou l'objet sur la base de la valeur qu'il pense pouvoir y ajouter (10 représentant la perfection).
-	\item Chaque membre du groupe dit : \og{}J'ai apprécié [...]\fg{} et énumère les qualités identifiées, suivies des éléments qui devraient être améliorés.
-	\item Chaque membre du groupe proposent les améliorations qu'ils estiment nécessaires pour donner au geste ou à l'objet la note de 10 : \og{}pour lui donner
-	      10, cela devrait [...]\fg{}.
+	\item Chaque membre du groupe dit: \og{}J'ai apprécié [\ldots]\fg{} et énumère les qualités identifiées, suivies des éléments qui devraient être améliorés.
+	\item Chaque membre du groupe proposent les améliorations qu'ils estiment nécessaires pour donner au geste ou à l'objet la note de 10: \og{}pour lui donner
+	      10, cela devrait [\ldots]\fg{}.
 \end{enumerate}
 
 \subsection{Engagements}
 \begin{itemize}
 	\item Acceptez les propositions d'amélioration sans les discuter.
-	\item Ne formulez que des commentaires positifs : ce que vous appréciez et ce que vous aimeriez voir apporter pour atteindre un 10.
+	\item Ne formulez que des commentaires positifs: ce que vous appréciez et ce que vous aimeriez voir apporter pour atteindre un 10.
 	\item Ne mentionnez pas ce que vous n'appréciez pas ni ne soyez négatif d'aucune façon.
 	\item Utilisez une notation qui reflète la capacité d'amélioration plutôt qu'une notation qui reflète votre propre appréciation du geste ou de l'objet.
 	\item Si vous êtes incapable de de citer quoi que ce soit que vous appréciez ou que vous souhaiteriez améliorer, donnez un 10.
@@ -546,7 +547,7 @@ Utilisez-le lorsque vous souhaitez améliorer quelque chose que vous avez créé
 \subsection{Remarques}
 \begin{itemize}
 	\item Une note de 10 indique que vous ne pouvez rien améliorer. Une note de 5 indique que vous allez proposer une amélioration qui rendra l'objet deux fois meilleur.
-	\item Retenez du protocole \emph{Jeu de la Perfection} qu'il permet d'améliorer un geste ou un objet. Par exemple :
+	\item Retenez du protocole \emph{Jeu de la Perfection} qu'il permet d'améliorer un geste ou un objet. Par exemple:
 	      \begin{quote}
 	      	\og{}Le son idéal d'un claquement de doigts est, pour moi, claquant, avec un volume suffisant qui me surprenne un peu. Pour obtenir un 10, tu devrais
 	        améliorer ta netteté.\fg{}
@@ -555,28 +556,28 @@ Utilisez-le lorsque vous souhaitez améliorer quelque chose que vous avez créé
 	      Si certaines idées ne vous conviennent pas, vous êtes libre de ne pas les prendre en compte.
 \end{itemize}
 
-\section{Alignement personnel} \label{protocole-alignement-personnel}
+\section{Alignement personnel}\label{protocole-alignement-personnel}
 
-Le protocole d'\emph{Alignement personnel}\footnote{En anglais : \emph{Personal alignment}} vous aide à interroger vos désirs en profondeur et à
+Le protocole d'\emph{Alignement personnel}\footnote{En anglais: \emph{Personal alignment}} vous aide à interroger vos désirs en profondeur et à
 identifier ce qui vous empêche de les satisfaire. Utilisez-le pour découvrir, articuler et obtenir ce que vous souhaitez. La qualité de votre
 alignement sera en adéquation avec la qualité de vos résultats.
 
 \subsection{Étapes}
 \begin{enumerate}
-	\item \textsc{Désir.} Répondez à la question : \og{}qu'est-ce je veux, exactement ?\fg{}
-	\item \textsc{Obstacle.} Demandez-vous : \og{}qu'est-ce qui m'empêche d'obtenir ce que je souhaite ?\fg{}
-	\item \textsc{Vertu.} Déterminez ce qui éliminerait cet obstacle en vous posant la question : \og{}quelle vertu -- si je
-	      l'avais -- me permettrait de franchir cet obstacle ?\fg{}
+	\item \textsc{Désir.} Répondez à la question: \og{}qu'est-ce je veux, exactement?\fg{}
+	\item \textsc{Obstacle.} Demandez-vous: \og{}qu'est-ce qui m'empêche d'obtenir ce que je souhaite?\fg{}
+	\item \textsc{Vertu.} Déterminez ce qui éliminerait cet obstacle en vous posant la question: \og{}quelle vertu --- si je
+	      l'avais --- me permettrait de franchir cet obstacle?\fg{}
 	\item \textsc{Pas de côté.} Faites comme si cette vertu était effectivement ce que vous souhaitez.
 	\item \textsc{Encore.} Répétez les étapes 2 à 4 jusqu'à la mise en lumière d'une force suffisamment puissance pour éliminer tous les obstacles et vous permettre
 	      d'obtenir ce que vous pensiez vouloir initialement.
-	\item \textsc{Fin.} Écrivez maintenant une phrase explicitant votre alignement personnel sous la forme : \og{}j'ai besoin de [\textsc{qualité}]\fg{}.
-	      Par exemple : \og{}j'ai besoin de courage\fg{}.
+	\item \textsc{Fin.} Écrivez maintenant une phrase explicitant votre alignement personnel sous la forme: \og{}j'ai besoin de [\textsc{qualité}]\fg{}.
+	      Par exemple: \og{}j'ai besoin de courage\fg{}.
 	\item \textsc{Signal.} Mettez en place un signal qui permet aux autres d'identifier que vous pratiquez un \emph{Alignement personnel}
 	      et fournissez leur une réponse qu'ils peuvent vous donner pour vous montrer leur soutien.\\
-		Par exemple :
+		Par exemple:
 	      \begin{quote}
-	      	\og{}Quand je fais/dis \emph{X}, veux-tu faire/répondre \emph{Y} ?\fg{}
+	      	\og{}Quand je fais/dis \emph{X}, veux-tu faire/répondre \emph{Y}?\fg{}
 	      \end{quote}
 	      Éventuellement, vous pouvez vous entraîner en prévoyant de faire \emph{X} un certain nombre de fois dans la journée où \emph{X} est une activité
 	      qui vous demande d'incarner votre alignement.
@@ -590,7 +591,7 @@ alignement sera en adéquation avec la qualité de vos résultats.
 	\item Choisissez un alignement qui \emph{vous} demande de changer mais qui ne demande pas aux autres de changer.
 	\item Identifiez des obstacles et des désirs qui vous sont personnels.
 	\item Identifiez des obstacles qui, une fois passés, impactent radicalement votre efficacité dans la vie, au travail et dans vos loisirs.
-	\item Choisissez une vertu qui vous concerne et, idéalement, en un seul mot. Exemples : intégrité, passion, soin de vous-même, paix, amusement.
+	\item Choisissez une vertu qui vous concerne et, idéalement, en un seul mot. Exemples: intégrité, passion, soin de vous-même, paix, amusement.
 	\item Demandez de l'aide à des gens qui connaissent votre alignement ou dont vous connaissez l'alignement.
 	\item Identifiez une preuve observable par une tierce personne objective.
 \end{enumerate}
@@ -603,16 +604,16 @@ alignement sera en adéquation avec la qualité de vos résultats.
 	\item Vous trouverez vos obstacles personnels en vous-même. Ils ne dépendent pas du contexte ou d'autres gens. Partez du principe que vous pouvez avoir ce
 	      que vous voulez dès maintenant et que cet obstacle n'est qu'un mythe qui vous empêche de révéler votre potentiel.
 	\item Dans l'idéal, identifiez des preuves de votre alignement à court terme et à long terme. Écrivez les résultats que vous observerez immédiatement (ou
-	      peu de temps après) mais aussi ceux que vous observerez dans au moins cinq ans -- voire plus.
+	      peu de temps après) mais aussi ceux que vous observerez dans au moins cinq ans --- voire plus.
 	\item À défaut d'autre chose, vous pouvez signaler à vos coéquipiers ou aux gens qui sont autour de vous que vous vous exercez sur votre alignement.
 	      S'ils ne connaissent pas le protocole, dites-leur simplement quelle qualité vous êtes en train de développer et demandez leur de l'aide.
 	\item Lorsque les membres d'une équipe travaillent sur leurs alignements personnels ensemble (lorsqu'ils s'aident mutuellement), la dernière étape du
 	      processus est plus puissante lorsqu'elle prend la forme d'une cérémonie.
 \end{itemize}
 
-\section{Enquête} \label{protocole-enquete}
+\section{Enquête}\label{protocole-enquete}
 
-Le protocole d'\emph{Enquête}\footnote{En anglais : \emph{Investigate}} permet de creuser un phénomène que l'on observe chez quelqu'un d'autre.
+Le protocole d'\emph{Enquête}\footnote{En anglais: \emph{Investigate}} permet de creuser un phénomène que l'on observe chez quelqu'un d'autre.
 Utilisez-le lorsque l'attitude de quelqu'un vous semble déplacée, étrange ou simplement intéressante.
 
 \subsection{Étapes}
@@ -635,16 +636,16 @@ Utilisez-le lorsque l'attitude de quelqu'un vous semble déplacée, étrange ou 
 \subsection{Remarques}
 \begin{itemize}
 	\item Évitez d'élaborer une théorie ou de poser un diagnostic.
-	\item Dans la mesure du possible, posez des questions de la forme :
+	\item Dans la mesure du possible, posez des questions de la forme:
 	      \begin{itemize}
-	      	\item \og{}Qu'est-ce qui [...] ?\fg{}
-	      	\item \og{}Veux-tu me donner un exemple concret ?\fg{}
-	      	\item \og{}Lorsque [...], comment ça se passe ?\fg{}
-	      	\item \og{}Qu'attends-tu le plus de [...] ?\fg{}
-	      	\item \og{}À propos de [...], qu'est-ce que tu considères comme le plus gros problème ?\fg{}
-	      	\item \og{}Qu'est-ce qui t'aiderait tout particulièrement avec [...] ?\fg{}
+	      	\item \og{}Qu'est-ce qui [\ldots]?\fg{}
+	      	\item \og{}Veux-tu me donner un exemple concret?\fg{}
+	      	\item \og{}Lorsque [\ldots], comment ça se passe?\fg{}
+	      	\item \og{}Qu'attends-tu le plus de [\ldots]?\fg{}
+	      	\item \og{}À propos de [\ldots], qu'est-ce que tu considères comme le plus gros problème?\fg{}
+	      	\item \og{}Qu'est-ce qui t'aiderait tout particulièrement avec [\ldots]?\fg{}
 	      \end{itemize}
-	\item Les questions suivantes, par exemple, sont inefficaces :
+	\item Les questions suivantes, par exemple, sont inefficaces:
 		  \begin{itemize}
 		    \item Questions orientées, ou qui reflètent une intention.
 		    \item Questions dont vous sous-entendez la réponse.
@@ -656,12 +657,12 @@ Utilisez-le lorsque l'attitude de quelqu'un vous semble déplacée, étrange ou 
 	      ou de \emph{Sortie}.
 \end{itemize}
 
-\chapter{Aller plus loin, protocoles} \label{aller-plus-loin}
+\chapter{Aller plus loin, protocoles}\label{aller-plus-loin}
 
 L'Atelier Express (\emph{Workshop Express}) a été élaboré par Richard Kasperowski. Toutes les autres informations et protocoles du \numref{aller-plus-loin} ont été
 élaborés par Jim McCarthy et Michele McCarthy.
 
-\section{Atelier Express (\emph{Workshop Express})} \label{atelier-express}
+\section{Atelier Express (\emph{Workshop Express})}\label{atelier-express}
 
 Appliquez le protocole d'\emph{Atelier Express} afin de faciliter et participer à un atelier court pour initier une équipe aux Protocoles Fondamentaux. Cet
 atelier vise à faire progresser vers l'excellence les individus et les équipes. Puisque \textsc{Équipe~=~Produit}, vous atteindrez plus facilement vos
@@ -679,7 +680,7 @@ objectifs, tant individuellement que collectivement.
 	\item Le facilitateur précise qu'il s'agit d'une version \og{}express\fg{} d'une Formation aux Protocoles Fondamentaux (\emph{Core Protocols BootCamp}). Cette
 	      formation en immersion se tient sur cinq jours et vous transforme, vous et votre équipe, en une équipe capable de concevoir, mettre en œuvre et livrer d'excellents
 	      produits en temps et en heure. Cet atelier express est une version raccourcie du \emph{BootCamp}. Nous utiliserons les Protocoles Fondamentaux, ainsi que des protocoles
-            supplémentaires en vue d'atteindre des résultats similaires en un temps bien plus court. L'atelier se déroule ainsi :
+            supplémentaires en vue d'atteindre des résultats similaires en un temps bien plus court. L'atelier se déroule ainsi:
 	      \begin{enumerate}
 	      	\item Présenter les Protocoles Fondamentaux.
 	      	\item S'engager en conscience à se soutenir soi-même.
@@ -693,7 +694,7 @@ objectifs, tant individuellement que collectivement.
 	      	\item Le facilitateur insiste sur l'importance du protocole \emph{Passer}.
 	      	\item Le facilitateur liste les Engagements Fondamentaux.
 	      	\item Le facilitateur et les participants font une \emph{Entrée}.
-	      	\item Le facilitateur insiste sur l'importance du protocole de \emph{Demande d'aide}. Le facilitateur joue un rôle passif pour le reste du l'atelier :
+	      	\item Le facilitateur insiste sur l'importance du protocole de \emph{Demande d'aide}. Le facilitateur joue un rôle passif pour le reste du l'atelier:
 	      	      il n'aide que lorsque cela lui est demandé.
 	      	\item Le facilitateur explique le protocole de \emph{Contrôle de Protocole}. Durant la suite de l'atelier, les participants utilisent entre autre les
 	      	      protocoles de \emph{Contrôle de Protocole} et de \emph{Demande d'aide} pour s'assurer qu'ils comprennent les Protocoles Fondamentaux et qu'ils les
@@ -705,7 +706,7 @@ objectifs, tant individuellement que collectivement.
    	      \emph{Toile d'Engagement Express} (\numref{toile-engagement-express}) pour s'aligner en tant qu'équipe et célébrer cet alignement.
    	\item Atteignez d'excellents résultats. Identifiez et développez votre Vision Partagée tous ensemble. Les participants pratiquent entre autres les protocoles
    	      \emph{Décision} et \emph{Jeu de la Perfection} pour aligner et articuler leur Vision Partagée.
-   	\item Célébrez !
+   	\item Célébrez!
 \end{enumerate}
 
 \subsection{Engagements}
@@ -719,33 +720,33 @@ objectifs, tant individuellement que collectivement.
 \subsection{Remarques}
 \begin{itemize}
 	\item Une fois que vous avez suivi les protocoles d'\emph{Alignement personnel Express}, de \emph{Toile d'Engagement Express}, que vous vous êtes alignés et avez formulé
-	      votre Vision Partagée, vous êtes déjà une équipe excellente, prête à réaliser des choses excellentes !
+	      votre Vision Partagée, vous êtes déjà une équipe excellente, prête à réaliser des choses excellentes!
 	\item Former des petits groupes pour vous aligner sur votre Vision Partagée. Des groupes de cinq personnes ou moins fonctionnent mieux.
 \end{itemize}
 
-\section{Engagements personnels} \label{engagements-personnels}
+\section{Engagements personnels}\label{engagements-personnels}
 
 Paraphez chaque engagement et signez en bas de la page pour indiquer que vous acceptez les articles suivants.
 
 \begin{enumerate}
 	\item \textsc{Sécurité} --- Je prendrai soin de moi-même, de ma vie privée et de la sécurité au cours de cette formation. J'ai conscience de pouvoir passer sur quoi
-	      que ce soit et que je peux sortir à tout moment sans conséquences.\\[1em]\nobreak
+	      que ce soit et que je peux sortir à tout moment sans conséquences.\\[1em]\nobreak{}
 	      Paraphe  \dotfill
 	      \vspace{\fill}
 	\item \textsc{Équipe} --- J'ai le désir d'en apprendre plus sur moi-même, la dynamique de groupe et mes coéquipiers, et je souhaite apprendre ce que
 	      le formateur a à m'apprendre à ce sujet. Au cours de cette formation, je mettrai de côté mon incrédulité et, en tant que stratégie d'apprentissage,
 	      je partirai du principe que les idées qui me sont présentées sont justes. Je veux apprendre efficacement et j'accepterai les conseils du formateur.
-	      Je m'abstiendrai de tout commentaire durant la formation.\\[1em]\nobreak
+	      Je m'abstiendrai de tout commentaire durant la formation.\\[1em]\nobreak{}
 	      Paraphe  \dotfill
 	      \vspace{\fill}
 	\item \textsc{Culture Fondamentale} --- J'ai pris connaissance des Engagements Fondamentaux et des Protocoles Fondamentaux qui seront évoqués au cours
 	      de cette formation. J'ad\-hère aux Engagements Fondamentaux et aux Protocoles Fondamentaux pour la durée de cette formation. Cela inclut que j'attends
-	      de tous les membres de mon équipe qu'ils adhèrent aux Engagements Fondamentaux et aux Protocoles Fondamentaux.\\[1em]\nobreak
+	      de tous les membres de mon équipe qu'ils adhèrent aux Engagements Fondamentaux et aux Protocoles Fondamentaux.\\[1em]\nobreak{}
 	      Paraphe  \dotfill
 	      \vspace{\fill}
 	\item \textsc{Durabilité} --- Si l'un des engagements ci-dessus me semble faux maintenant ou au cours de la formation, j'en ferai part au formateur
-	      pour résoudre cela immédiatement. \\[1em]\nobreak
-	      Paraphe  \dotfill
+	      pour résoudre cela immédiatement. \\[1em]\nobreak{}
+	      Paraphe  \dotfill{}
 	      \vspace{\fill}
 \end{enumerate}
 
@@ -753,7 +754,7 @@ Paraphez chaque engagement et signez en bas de la page pour indiquer que vous ac
 
 Nom \dotfill Date \dotfill
 
-\section{Alignement Personnel Express} \label{alignement-personnel-express}
+\section{Alignement Personnel Express}\label{alignement-personnel-express}
 
 À l'instar du protocole d'\emph{Alignement personnel}, le protocole d'\emph{Ali\-gnement Personnel Express} vous aide à interroger vos désirs en profondeur
 et à identifier ce qui vous empêche de les satisfaire. Utilisez-le pour découvrir, articuler et obtenir ce que vous souhaitez. La qualité de votre
@@ -765,12 +766,12 @@ alignement sera en adéquation avec la qualité de vos résultats.
 Réalisez les étapes 1 à 6 seul (30 minutes)
 
 \begin{enumerate}
-	\item Qu'est-ce que vous \textsc{voulez} ?
+	\item Qu'est-ce que vous \textsc{voulez}?
 	      \begin{enumerate}
-	      	\item Quels \textsc{obstacles} vous empêchent d'obtenir ce que vous \textsc{voulez} ?
-	      	\item Quelle \textsc{qualité} vous permettrait de franchir cet \textsc{obstacle} ? Choisissez parmi les suivantes :
+	      	\item Quels \textsc{obstacles} vous empêchent d'obtenir ce que vous \textsc{voulez}?
+	      	\item Quelle \textsc{qualité} vous permettrait de franchir cet \textsc{obstacle}?Choisissez parmi les suivantes:
 	      	      \begin{itemize}
-	      	      	\item Connaissance de soi (si vous ne savez pas quoi choisir, choisissez celle-ci : c'est que vous en avez besoin)
+	      	      	\item Connaissance de soi (si vous ne savez pas quoi choisir, choisissez celle-ci: c'est que vous en avez besoin)
 	      	      	\item Intégrité
 	      	      	\item Courage
 	      	      	\item Passion
@@ -781,72 +782,72 @@ Réalisez les étapes 1 à 6 seul (30 minutes)
 	      	      	\item Sagesse
 	      	      	\item Santé
 	      	      \end{itemize}
-	      	      (Note : dans votre choix d'une qualité, partez du principe que allez l'acquérir à court terme. Faites comme si le simple fait de vouloir
+	      	      (Note: dans votre choix d'une qualité, partez du principe que allez l'acquérir à court terme. Faites comme si le simple fait de vouloir
 	      	      l'avoir la fera apparaître. Par exemple, si vous choisissez la passion, vous serez passionné. Vous maîtriserez la passion. Elle n'aura plus
 	      	      de secret pour vous. Votre passion sera parfaitement adaptée à votre vie. Vous serez un modèle et un maître en matière de passion. Vous
 	      	      profiterez des fruits d'une vie passionnée.)
 	      \end{enumerate}
-	\item Éventuellement, pour approfondir :
+	\item Éventuellement, pour approfondir:
 	      \begin{enumerate}
 	      	\item La \textsc{qualité} que vous avez choisi devient ce que vous \textsc{voulez} (\emph{ie} \og{}La \textsc{qualité X} est maintenant ce
 	      	      que je \textsc{veux}\fg{}).
 	      	\item Reprenez à l'étape 1 en utilisant ce postulat.
-	      	\item Itérez autant de fois que nécessaire :
+	      	\item Itérez autant de fois que nécessaire:
 	      	      \begin{enumerate}
-	      	      	\item jusqu'à avoir identifié la qualité qui vous permette de franchir l'obstacle initial ;
+	      	      	\item jusqu'à avoir identifié la qualité qui vous permette de franchir l'obstacle initial;
 	      	      	\item ou jusqu'à ce que vous ayez envie d'arrêter.
 	      	      \end{enumerate}
 	      \end{enumerate}
-	\item Mon \textsc{alignement} : je veux \dotfill.\\
+	\item Mon \textsc{alignement}: je veux \dotfill.\\
 	      Écrivez la \textsc{qualité} identifiée comme votre alignement.
-	\item Mon \textsc{signal} : qu'allez-vous dire ou faire pour indiquer
+	\item Mon \textsc{signal}: qu'allez-vous dire ou faire pour indiquer
 	      \begin{enumerate}
-	      	\item que vous vous apprêtez à travailler sur votre alignement ?
-	      	\item que vous vous apprêtez à parler de votre travail d'alignement ?
-	      	\item que vous fêtez votre alignement ?
+	      	\item que vous vous apprêtez à travailler sur votre alignement?
+	      	\item que vous vous apprêtez à parler de votre travail d'alignement?
+	      	\item que vous fêtez votre alignement?
 	      \end{enumerate}
-	      Par défaut : \og{}Je travaille sur mon alignement : \textsc{qualité}\fg{}.
-	\item La \textsc{réponse} que vous attendez des autres lorsque vous émettez ce signal : quelle réaction attendez-vous de vos collègues à ce moment ?
-	      Comment peuvent-ils vous soutenir dans votre travail d'alignement et votre nouvelle attitude ?\\
-	      Par défaut : \og{}Quand j'annonce \textsc{signal}, m'exprimerez-vous votre soutien et, si je le souhaite, m'accorderez-vous un peu de votre
-	      temps ?
-	\item Une \textsc{preuve} observable que vous avez atteint -- ou que vous travaillez sur -- votre alignement.\\
+	      Par défaut: \og{}Je travaille sur mon alignement: \textsc{qualité}\fg{}.
+	\item La \textsc{réponse} que vous attendez des autres lorsque vous émettez ce signal: quelle réaction attendez-vous de vos collègues à ce moment?
+	      Comment peuvent-ils vous soutenir dans votre travail d'alignement et votre nouvelle attitude?\
+	      Par défaut: \og{}Quand j'annonce \textsc{signal}, m'exprimerez-vous votre soutien et, si je le souhaite, m'accorderez-vous un peu de votre
+	      temps?
+	\item Une \textsc{preuve} observable que vous avez atteint --- ou que vous travaillez sur --- votre alignement.\\
           Choisissez des changements ou des réalisations que les autres peuvent observer. Des preuves au sens légal du terme. \\
-          Par défaut : \og{}Je serai en mesure de présenter un bilan d'avancement de mon alignement que me fourniront [\textsc{noms des personnes}]
+          Par défaut: \og{}Je serai en mesure de présenter un bilan d'avancement de mon alignement que me fourniront [\textsc{noms des personnes}]
           tous les [\textsc{intervalle}].
 \end{enumerate}
 
 \subsection{Seconde partie}
 
-Réalisez les étapes \ref{ape-2-debut} à \ref{ape-2-fin} en binômes ou en trinômes (60 minutes)
+Réalisez les étapes~\ref{ape-2-debut} à~\ref{ape-2-fin} en binômes ou en trinômes (60 minutes)
 
 \begin{enumerate}[resume]
-	\item \label{ape-2-debut} Mettez-vous avec un ou deux coéquipiers que, de préférence, vous ne connaissez pas très bien mais que vous souhaitez mieux
+	\item\label{ape-2-debut} Mettez-vous avec un ou deux coéquipiers que, de préférence, vous ne connaissez pas très bien mais que vous souhaitez mieux
 	      connaître. Utilisez durant une heure le protocole \emph{Enquête} (\numref{protocole-enquete}) pour identifier ce que chacun de vous désire,
 	      les obstacles auxquels il fait face et son alignement. Si vous le souhaitez, vous pouvez organiser vos échanges en fenêtres de 10 ou 15 minutes.
-	      N'hésitez pas à revoir votre alignement. Vous pouvez égalent vous séparer et vous joindre à d'autres groupes -- toujours en mode
-	      \emph{Enquête} -- si le temps le permet et si cela est pertinent. Acceptez votre vulnérabilité, soyez curieux.
-	\item \label{ape-2-fin} Fixer votre alignement.
+	      N'hésitez pas à revoir votre alignement. Vous pouvez égalent vous séparer et vous joindre à d'autres groupes --- toujours en mode
+	      \emph{Enquête} --- si le temps le permet et si cela est pertinent. Acceptez votre vulnérabilité, soyez curieux.
+	\item\label{ape-2-fin} Fixer votre alignement.
 \end{enumerate}
 
-\section{Toile d'Engagement Express} \label{toile-engagement-express}
+\section{Toile d'Engagement Express}\label{toile-engagement-express}
 
-Note : sincérité, profondeur, passion et vulnérabilité sont essentielles. Plus il y en a, meilleurs seront les résultats de l'équipe.
+Note: sincérité, profondeur, passion et vulnérabilité sont essentielles. Plus il y en a, meilleurs seront les résultats de l'équipe.
 
 \subsection{Étapes}
 \begin{enumerate}
 	\item Définissez un espace rituel.
 	\item L'équipe s'installe en silence dans cet espace.
-	\item Les membres de l'équipe, chacun à leur tour :
+	\item Les membres de l'équipe, chacun à leur tour:
 	      \begin{enumerate}
-	      	\item \label{team-ritual-start} \textsc{Disent} --- \og{}je veux aligner [\textsc{qualité}]\fg{}
+	      	\item\label{team-ritual-start} \textsc{Disent} --- \og{}je veux aligner [\textsc{qualité}]\fg{}
 	      	\item \textsc{Proposent} --- Du fond du cœur, toute émotion, toute pensée, tout sentiment qui décrit ce choix d'alignement.
-	      	\item \label{team-ritual-stop} \textsc{Demandent de l'aide} --- Demandez à chacun de vos coéquipiers, chacun son tour :
+	      	\item\label{team-ritual-stop} \textsc{Demandent de l'aide} --- Demandez à chacun de vos coéquipiers, chacun son tour:
 	      	      \begin{quote}
-	      	      	\og{}Quand je \textsc{signal}, veux-tu \textsc{réponse} ?\fg{}
+	      	      	\og{}Quand je \textsc{signal}, veux-tu \textsc{réponse}?\fg{}
 	      	      \end{quote}
 	      	      ou (éventuellement et) anticipez sur votre demande d'aide vis-à-vis de cet alignement.
-			\item Quand tout le monde est passé par les étapes \ref{team-ritual-start} à \ref{team-ritual-stop} et que tous les membres
+			\item Quand tout le monde est passé par les étapes~\ref{team-ritual-start} à~\ref{team-ritual-stop} et que tous les membres
 			      du groupe ont connaissance des demandes d'aide, la \emph{Toile d'Engagement} est en place.
 	      \end{enumerate}
 	\item Pour pratiquer la \emph{Toile}, chaque membre réalise l'exercice suivant. Au cours de la formation, ou, éventuellement après,
@@ -854,7 +855,7 @@ Note : sincérité, profondeur, passion et vulnérabilité sont essentielles. Pl
 	      Vous pouvez également le faire par e-mail.
 \end{enumerate}
 
-\section{Vision partagée} \label{vision-partagee}
+\section{Vision partagée}\label{vision-partagee}
 
 N'entreprenez rien tant que vous n'avez pas une \emph{Vision Partagée}. Pour cela, vous aurez besoin des protocoles \emph{Entrée}
 (\numref{protocole-entree}), \emph{Décision (\numref{protocole-decision})} et \emph{Alignement personnel} (\numref{protocole-alignement-personnel}).
@@ -888,17 +889,17 @@ Avant de continuer, assurez-vous que votre \emph{Toile d'Engagement} est termin�
 consultants pour déterminer si vous pouvez aller plus loin.
 
 Utilisez les protocoles de \emph{Décision} (\numref{protocole-decision}) et le \emph{Jeu de la Perfection} (\numref{protocole-jeu-perfection})
-pour vous aider à atteindre une \emph{Vision partagée} à long terme :
+pour vous aider à atteindre une \emph{Vision partagée} à long terme:
 \begin{itemize}
 	\item qui soit concise (moins d'une dizaine de mots).
-	\item qui donne au lecteur une idée de l'impact qu'elle aura lorsqu'elle sera réalisée. Exemples :
+	\item qui donne au lecteur une idée de l'impact qu'elle aura lorsqu'elle sera réalisée. Exemples:
 		  \begin{quote}
 		  	\og{}Un ordinateur sur chaque bureau\fg{}
 
 		  	\og{}Un homme sur la Lune\fg{}
 		  \end{quote}
-	\item qui soit une phrase \og{}choc\fg{}, qui frappe le lecteur et réponde à l'un de ses besoins. Le lecteur répond \og{}Oui !\fg{}
-	      lorsqu'il le lit et réalise qu'il souhaite que cela arrive. Exemple :
+	\item qui soit une phrase \og{}choc\fg{}, qui frappe le lecteur et réponde à l'un de ses besoins. Le lecteur répond \og{}Oui!\fg{}
+	      lorsqu'il le lit et réalise qu'il souhaite que cela arrive. Exemple:
 	      \begin{quote}
 	      	\og{}Un monde sans fil\fg{}
 	      \end{quote}
@@ -916,16 +917,16 @@ l'implémentation du produit.
 	      Vos outils seront les protocoles \emph{Décision} (\numref{protocole-decision}) et \emph{Jeu de la Perfection}
 	      (\numref{protocole-jeu-perfection}).
 	      \begin{itemize}
-	      	\item La vision à long terme ne s'exprime qu'avec des mots. Pas avec un symbole, une chanson...
+	      	\item La vision à long terme ne s'exprime qu'avec des mots. Pas avec un symbole, une chanson\ldots
 	      	\item La vision à long terme doit être imaginative. Pro\-jetez-vous aussi loin dans le futur que possible.
 	      	      Vingt ans est un bon point de départ mais cette échéance est probablement au-delà de ce que vous
 	      	      êtes en mesure d'extrapoler. Cela doit rester néanmoins un travail d'intention et d'imagination,
 	      	      pas une analyse.
 	      	\item La vision à long terme doit être mesurable. Dans l'idéal, son avancement devrait lui aussi l'être.
-	      	      Le résultat attendu devrait être directement mesurable : une chose ou un événement observable comme
+	      	      Le résultat attendu devrait être directement mesurable: une chose ou un événement observable comme
 	      	      par exemple \og{}un homme sur la Lune\fg{}. Il peut également être plus diffus et difficile à mesurer,
 	      	      comme \og{}Créer une bande passante infinie et gratuite\fg{}. Votre vision à long terme peut viser à
-	      	      développer des valeurs, difficiles mais néanmoins mesurables : \og{}éliminer la pauvreté\fg{},
+	      	      développer des valeurs, difficiles mais néanmoins mesurables: \og{}éliminer la pauvreté\fg{},
 	      	      \og{}une démocratie radicale omniprésente\fg{}.
 			\item La déclaration de cette vision à long terme doit tenir en très peu de mots, idéalement moins de 10.
 			      Si elle en fait plus de six, demandez-déjà à votre équipe de la réévaluer.
@@ -949,12 +950,13 @@ l'implémentation du produit.
  |>{\hsize=\hsize}Y|% 50% of 2\hsize
   >{\hsize=\hsize}Y|% 50% of 2\hsize
 }
-	\hline
-	\textsc{Déclaration de vision à long terme} & \textsc{Déclaration de première version} \\ \hline \hline
-	Envoyer un homme sur la Lune & Mettre un homme en orbite \\ \hline
-	Un ordinateur sur chaque bureau & Un ordinateur sur chaque bureau de notre entreprise \\ \hline
-	La paix dans le monde & La paix dans notre famille \\ \hline
-	Un monde sans fils & Des téléphones sans fil pour toute notre équipe \\ \hline
+	\toprule
+	\textsc{Déclaration de vision à long terme} & \textsc{Déclaration de première version} \\ \midrule
+	Envoyer un homme sur la Lune & Mettre un homme en orbite \\ \midrule
+	Un ordinateur sur chaque bureau & Un ordinateur sur chaque bureau de notre entreprise \\ \midrule
+	La paix dans le monde & La paix dans notre famille \\ \midrule
+	Un monde sans fils & Des téléphones sans fil pour toute notre équipe \\	
+	\bottomrule
 \end{tabularx}
 
 \subsection{Achevez votre Vison Partagée}
@@ -972,7 +974,7 @@ si vous avez compris et suivi leurs conseils. Si ce n'est pas le cas, vous aurez
 perdu votre temps car vos managers insisteront sur le fait qu'il faut que vous profitiez pleinement de
 toutes les ressources disponibles pour ce projet.
 
-Souvenez-vous :\mynobreakpar
+Souvenez-vous:\mynobreakpar{}
 \begin{itemize}
 	\item Vos managers remarqueront rapidement que vous ne dites pas la vérité.
 	\item Vos managers seront capables d'identifier que vous n'avez pas de \emph{Vision Partagée}.
@@ -985,7 +987,7 @@ Souvenez-vous :\mynobreakpar
 \subsection{Profitez des avantages de votre état de vision partagée}
 
 Le \emph{Rejet de la Vision Partagée} incitera l'équipe à retomber dans ses vieilles habitudes de travail. Des
-habitudes prises dans un monde où il n'y a que très peu de visions partagées, comme par exemple :
+habitudes prises dans un monde où il n'y a que très peu de visions partagées, comme par exemple:
 \begin{itemize}
 	\item Manquer de confiance et penser que le travail des autres ne sera pas acceptable si vous ne le supervisez
 	      pas. Refuser de travailler en petits groupes.
@@ -994,23 +996,23 @@ habitudes prises dans un monde où il n'y a que très peu de visions partagées,
 \end{itemize}
 
 Avec une \emph{Vision Partagée}, vous pouvez abandonner la plupart des habitudes que vous avez prises pour
-contrôler les choses au travail. Une fois que cette vision est définie, nous vous recommandons :\mynobreakpar
+contrôler les choses au travail. Une fois que cette vision est définie, nous vous recommandons:\mynobreakpar{}
 \begin{itemize}
 	\item De constituer des sous-équipes. Votre travail restera en phase car vous restez connectés et que
 	      vous partagez la même vision.
-	\item De parler simplement de vos bonnes idées au fil de l'eau : nul besoin de maîtriser la discussion
+	\item De parler simplement de vos bonnes idées au fil de l'eau: nul besoin de maîtriser la discussion
 	      en en faisant une session de \og{}brainstorming\fg{}.
 	\item De suivre les visionnaires. Certains membres de l'équipe auront immanquablement des idées pour
 	      le produit que vous développez. Implémentez-les. Il n'y a pas d'inconvénient à faire quoi que soit
 	      tant que votre équipe est en état de \emph{Vision Partagée}.
 	\item Assurez-vous que quelqu'un comprend ce que vous proposez. Comment cette idée se traduit-elle en
-	      termes financiers ?
+	      termes financiers?
 	\item Mettez à profit vos connaissances relatives aux processus pour améliorer vos livrables mais
 	      n'engagez pas de discussion relative aux processus eux-mêmes ni ne dépensez l'énergie de l'équipe
 	      à essayer de les convaincre d'en utiliser un.
 	\item Commencez à faire des choses. Vous y verrez plus clair au fur et à mesure que vous développez
 	      votre produit. \og{}Planifier\fg{} est généralement une mauvaise idée.
-	\item Assurez-vous d'éliminer toutes les peurs. Toute votre équipe a épuisé ses ressources créatives ?
+	\item Assurez-vous d'éliminer toutes les peurs. Toute votre équipe a épuisé ses ressources créatives?
 	      Neuf fois sur 10, quelqu'un n'a pas partagé une bonne idée à cause d'une peur quelconque.
 	\item Attendez la grande idée. Si les idées semblent toutes demander un gros effort, attendez et
 	      détendez-vous. Il y aura bien une meilleure idée qui résoudra ces problèmes et demandra
@@ -1035,7 +1037,7 @@ les équipes et les organisations à comprendre ce qu'ils ont à leur dispositio
 et à transformer ce qu'ils ont en ce qu'ils veulent. En tant que coach, manager et coéquipier, il a travaillé avec les
 plus grandes (et les plus petites) entreprises technologiques du monde en les aidant à améliorer leurs résultats.
 
-En savoir plus sur Richard :
+En savoir plus sur Richard:
 \begin{itemize}
 	\item Twitter \texttt{@rkasper}
 	\item Web \url{https://kasperowski.com/}
