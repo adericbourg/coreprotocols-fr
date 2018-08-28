@@ -9,3 +9,7 @@ pdf: _build
 
 epub: _build
 	cd tex && pandoc document.tex -o ../_build/document.epub -M date="`date "+%e %B %Y"`"
+
+lint:
+	lacheck tex/document.tex 
+	chktex tex/document.tex
